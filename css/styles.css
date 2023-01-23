@@ -1,6 +1,79 @@
-.homepage{
+.navbar{
 
-    background-image:;
 }
 
+li {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-left: 20px;
+    
+}
+
+.testimonies {
+	height: 60vh;
+	background: rgb(247, 247, 247);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.header {
+	margin: 6vh;
+	width: 60vw;
+	text-align: center;
+}
+
+.header>h1 {
+	font-size: 58px;
+}
+
+.header>p {
+	color: grey;
+	font-size: 20px;
+
+}
+
+
+.ratings {
+	display: flex;
+	justify-content: center;
+}
+
+.content{
+	width: 75%;
+	display: flex;
+	justify-content: center;
+	gap: 3vw;
+
+}
+
+
+
+.testimonials {
+	height: 31vw;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 2px solid rgb(39, 39, 39, 0.2);
+	border-radius: 14px;
+
+}
+
+.testimonials>img {
+	height: 12vw;
+	width: 12vw;
+}
+
+.testimonials>p {
+	color: rgb(39, 39, 39, 0.7);
+	text-align: center;
+	font-size: 23px;
+	margin: 40px 62px;
+}
 
