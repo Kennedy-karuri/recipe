@@ -12,6 +12,7 @@
         <h1>WELCOME TO KEN'S SPECIAL RECIPIES</h1>
         <p>Food at its best.</p>
         <p>Login or create an account with us to view our recipies</p>
+    <img src="" alt="">
 
        </div>
 </body>
