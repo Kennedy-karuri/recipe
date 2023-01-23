@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="homepage">
-<div class="navabar">
+<div class="navbar">
 
 <nav>
    
-        <li><a href="wecome.php">HOME</a></li>
+        <li><a href="welcome.php">HOME</a></li>
         <li><a href="#testimonials">TESTIMONIALS</a></li>
-        <li><a href="recipies.html">RECIPIES</a></li>
+        <li><a href="recipies.php">RECIPIES</a></li>
    
 </nav>
 
