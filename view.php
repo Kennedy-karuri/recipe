@@ -3,6 +3,7 @@
 
 		background: linear-gradient(to right, #004586, #553186, #CE1487);
 		text-align:center;
+		color:white;
 		
 	}
 	p{
@@ -17,13 +18,13 @@ include 'classes.php';
 if (isset($_GET['title']) && !(empty(trim($_GET['title'])))){
 	$slug=$_GET['title'];
 	foreach ($recipe_list as $recipe) {
-		$result = stripos($recipe->title, $slug) !== false; /*Searching for a recipe whose title matches the slug*/
-		if ($result){ /*Fetching the details of the recipe found*/
+		$result = stripos($recipe->title, $slug) !== false;
+		if ($result){ 
 			$image=$recipe->image;
 			$title=$recipe->title;
 			$description=$recipe->description;
 			$ingredients=$recipe->ingredients;
-			$cookingEquipment=$recipe->cookingEquipment;
+			$Equipment=$recipe->Equipment;
 		}
 	} 
 }
@@ -39,12 +40,12 @@ if (isset($_GET['title']) && !(empty(trim($_GET['title'])))){
 	<div class="view-item-row">
 		<div class="one">
 			<div class="view-image-holder">
-				<?php echo '<img class="view-image" src="'.$image.'" alt="Image should be here">';?>
+				<?php echo '<img class="view-image" src="'.$image.'" alt="">';?>
 			</div>
 			<div class="view-image-title">
 				<h1><?php echo $slug;?></h1>
 			</div>
-		</div><!-- CLosing one -->
+		</div>
 		<hr>
 		<div class="details description">
 			<h1>Description</h1>
@@ -63,13 +64,13 @@ if (isset($_GET['title']) && !(empty(trim($_GET['title'])))){
 		<div class="details equipment">
 			<h1>Equipment</h1>
 			<p>
-				<?php echo $cookingEquipment;?>
+				<?php echo $Equipment;?>
 			</p>
 		</div>
 
 
-	</div> <!-- Closing the row -->
-</div> <!-- Closing the main container -->
+	</div> 
+</div> 
 
 
 

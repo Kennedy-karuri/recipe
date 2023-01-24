@@ -3,7 +3,7 @@
 $recipe_list=array(); // This array will store objects
 
 // Creating a class to Add ,View and Search recipes.
-class RecipeCollection {
+class Food {
 	function printAll(){ // Shows all available recipes
 		global $recipe_list;
 		print_r($recipe_list);
@@ -41,19 +41,19 @@ class RecipeCollection {
 }
 
 /*Creating the template for individual recipes*/
-class Recipe extends RecipeCollection{
+class Recipe extends Food{
 	public $image;
 	public $title;
 	public $description;
 	public $ingredients;
-	public $cookingEquipment;
+	public $Equipment;
 
-	function __construct($image,$title,$description,$ingredients,$cookingEquipment){
+	function __construct($image,$title,$description,$ingredients,$Equipment){
 		$this->image=$image;
 		$this->title=$title;
 		$this->description=$description;
 		$this->ingredients=$ingredients;
-		$this->cookingEquipment=$cookingEquipment;
+		$this->Equipment=$Equipment;
 	}
 
 /* Fetches a recipe and adds to the main page*/
@@ -73,7 +73,7 @@ class Recipe extends RecipeCollection{
 }
 
 include 'recipes.php';
-$recipes=new RecipeCollection();
+$recipes=new Food();
 
 
 
