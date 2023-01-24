@@ -2,7 +2,7 @@
 
 
 
-/* Creating the objects*/
+
 $one=new Recipe(
 	"images/spaghetti.jpg",
 	"Spagheti Bolognese",

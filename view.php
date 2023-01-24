@@ -12,7 +12,6 @@
 	}
 </style>
 <?php 
-include 'header.php';
 include 'classes.php';
 
 if (isset($_GET['title']) && !(empty(trim($_GET['title'])))){

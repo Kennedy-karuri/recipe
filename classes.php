@@ -1,15 +1,15 @@
 <?php
-/*Creating the array that will store the various recipes*/
-$recipe_list=array(); // This array will store objects
 
-// Creating a class to Add ,View and Search recipes.
+$recipe_list=array(); 
+
+
 class Food {
-	function printAll(){ // Shows all available recipes
+	function printAll(){ 
 		global $recipe_list;
 		print_r($recipe_list);
 	}
 
-	public function addItem($item){ // Adds a recipe to the collection
+	public function addItem($item){ 
 		global $recipe_list;
 		array_push($recipe_list,$item);
 	}
@@ -31,7 +31,7 @@ class Food {
 				$output.='</div>';
 				$final.=$output;
 		  }
-		}/*Closing the for loop*/
+		}
 
 		if ($final === ""){
 			return '<h3>Recipe for "'.$slug.'" is not available!</h3>';
@@ -40,7 +40,7 @@ class Food {
 	}
 }
 
-/*Creating the template for individual recipes*/
+
 class Recipe extends Food{
 	public $image;
 	public $title;
@@ -56,7 +56,7 @@ class Recipe extends Food{
 		$this->Equipment=$Equipment;
 	}
 
-/* Fetches a recipe and adds to the main page*/
+
 	public function getter(){
 		$image=$this->image;
 		$title=$this->title;

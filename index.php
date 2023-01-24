@@ -20,7 +20,7 @@ console.log("testing");
 <p>FOOD SERVED AT IT'S BEST</p>
 
 <div class="search">
-<input id="searchInput" type="text" name="search" placeholder="Search your recipe here.." ><button>search</button>
+<input id="searchInput" type="text" name="search" placeholder="Search your recipe here.." >
 </div>
 
 
@@ -42,17 +42,17 @@ include 'classes.php';
 		}
 		?>
 
-	</div> <!-- Closing the row -->
-</div> <!-- Closing the main container -->
+	</div> 
+</div> 
 
 <script>
-/*Listening for search params*/
+
 document.getElementById("searchInput").addEventListener("keyup", function(event) {
-  // If the "enter" key is pressed
+ 
   if (event.keyCode === 13) {
-    // Get the search parameter
+   
     var searchParam = document.getElementById("searchInput").value;
-    // Send the search parameter to /search.php
+    
     window.location.href = "/index.php?search=" + searchParam;
   }
 });
