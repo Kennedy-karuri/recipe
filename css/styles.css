@@ -15,12 +15,14 @@ body {
 h1{
 
     text-align: center;
+	padding-top: 20px;
 }
 
 p{
 
     text-align: center;
     font-size: large;
+	padding-top: 20px;
 }
 
 .search{
