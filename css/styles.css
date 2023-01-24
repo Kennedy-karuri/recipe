@@ -7,7 +7,9 @@
 
 
 body {
-	background: linear-gradient(to right, #004586, #553186, #CE1487);
+	background: linear-gradient(to right, #004586, #553186);
+	
+	
 }
 
 h1{

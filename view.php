@@ -1,8 +1,8 @@
 <style>
 	body{
 
-		background: linear-gradient(to right, #004586, #553186, #CE1487);
-		text-align:center;
+		background: linear-gradient(to right, #004586, #553186);
+		text-align:left;
 		color:white;
 		
 	}
